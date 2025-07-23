@@ -1,1 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:not(html, body) {
+  border: 1px dashed gray;
+}
+
+:root {
+  --white-bg-for-main: hsl(0, 0%, 100%);
+
+  --html-bg-color: hsl(30, 54%, 90%);
+  --underline-color: hsl(30, 18%, 87%);
+  --text-color: hsl(30, 10%, 34%);
+  --title-color-for-h1: hsl(24, 5%, 18%);
+
+  --title-color-for-section: hsl(14, 45%, 36%);
+
+  --title-color-for-duration: hsl(332, 51%, 32%);
+  --duration-bg-color: hsl(330, 100%, 98%);
+}
+
+body {
+  height: 100vh;
+  background: var(--html-bg-color);
+}
+
+h1,
+h3 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+h4,
+p,
+li,
+footer {
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  width: 960px;
+  padding: 54px;
+  margin: 7em auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: var(--white-bg-for-main);
+}
+
+header img {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+}
