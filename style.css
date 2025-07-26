@@ -117,7 +117,8 @@ h2 {
   color: var(--title-color-for-section);
 }
 
-section li::marker {
+.ingredients ul li::marker,
+.instructions ul li::marker {
   color: var(--title-color-for-section);
   font-weight: 700;
 }
