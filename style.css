@@ -34,7 +34,6 @@ h2 {
   font-weight: 400;
 }
 
-h3,
 p,
 ul,
 ol,
@@ -102,7 +101,7 @@ h1 {
   background: var(--duration-bg-color);
 }
 
-.schedule h3 {
+.schedule p.schedule-title {
   font-size: clamp(1.2rem, 5vw, 1.5rem);
   color: var(--title-color-for-duration);
   margin-bottom: 1em;
