@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-*:not(html, body) {
-  /* border: 1px dashed gray; */
-}
-
 :root {
   --white-bg-for-main: hsl(0, 0%, 100%);
 
@@ -28,7 +24,7 @@
 
 body {
   height: 100vh;
-  font-size: 16px;
+  font-size: 1rem;
   background: var(--html-bg-color);
 }
 
@@ -52,19 +48,19 @@ ul,
 ol {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding-left: 24px;
+  gap: 1em;
+  padding-left: 1.5em;
 }
 
 li {
-  padding-left: 16px;
+  padding-left: 1em;
 }
 
 main {
-  width: min(700px, 100%);
-  padding: 40px;
+  width: min(44em, 100%);
+  padding: 2.5em;
   margin: 7em auto;
-  border-radius: 24px;
+  border-radius: 1.5em;
   background: var(--white-bg-for-main);
 }
 
@@ -77,15 +73,15 @@ header {
 header img {
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 0.7em;
   object-fit: cover;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 50px 0;
+  gap: 1.3em;
+  padding: 3em 0;
   border-bottom: 1px solid var(--underline-color);
 }
 
@@ -101,7 +97,7 @@ h1 {
 }
 
 .schedule {
-  padding: 20px;
+  padding: 1.3em;
   border-radius: 1rem;
   background: var(--duration-bg-color);
 }
@@ -109,7 +105,7 @@ h1 {
 .schedule h3 {
   font-size: clamp(1.2rem, 5vw, 1.5rem);
   color: var(--title-color-for-duration);
-  margin-bottom: 16px;
+  margin-bottom: 1em;
 }
 
 .schedule li::marker {
@@ -139,12 +135,16 @@ tr:last-child {
 }
 
 td {
-  padding: 16px;
+  padding: 1rem;
 }
 
 td:last-child {
   font-weight: 700;
   color: var(--title-color-for-section);
+}
+
+footer {
+  font-size: clamp(0.8rem, 5vw, 1rem);
 }
 
 footer a {
@@ -156,7 +156,7 @@ footer a:hover {
   color: var(--title-color-for-section);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 24em/*375px*/) {
   main {
     width: 100vw;
     margin: 0;
@@ -169,11 +169,12 @@ footer a:hover {
   }
 
   section {
-    padding: 20px;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
   }
 
   section:last-child {
-    padding-bottom: 20px;
+    padding-bottom: 3em;
   }
 
   footer {
