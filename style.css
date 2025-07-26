@@ -150,7 +150,6 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--text-color);
-  transition: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
