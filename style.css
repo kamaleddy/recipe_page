@@ -152,7 +152,7 @@ footer a {
   color: var(--text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   footer a {
     transition: color 0.3s ease;
   }
